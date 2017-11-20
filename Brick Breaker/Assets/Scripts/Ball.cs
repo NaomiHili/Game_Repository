@@ -2,14 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class Ball : MonoBehaviour {
 
-    public Paddle paddle;
+    Paddle paddle;
     Vector3 ballPaddleDiff;
     bool gameStarted = false;
+    AudioSource audio;
 
 	// Use this for initialization
 	void Start () {
+        audio = GetComponent<AudioSource>();
+        paddle = GameObject.FindObjectOfType<Paddle>();
+
         ballPaddleDiff = this.transform.position - paddle.transform.position;
 	}
 	
@@ -26,5 +31,16 @@ public class Ball : MonoBehaviour {
             gameStarted = true;                              // (x velue, y value)
             this.GetComponent<Rigidbody2D>().velocity = new Vector2(2f, 10f);
         }
-	}
+
+        if (Input.GetKeyDown(KeyCode.Return) && !gameStarted)
+        {
+            gameStarted = true;                              // (x velue, y value)
+            this.GetComponent<Rigidbody2D>().velocity = new Vector2(2f, 10f);
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        audio.Play();
+    }
 }

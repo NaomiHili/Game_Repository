@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Brick : MonoBehaviour {
 
+    public int maxHits;
+
     int timesHit;
 
 	// Use this for initialization
@@ -22,5 +24,10 @@ public class Brick : MonoBehaviour {
     {
         timesHit++;
         print(gameObject.name + " : " + timesHit);
+
+        if(timesHit >= maxHits)
+        {
+            Destroy(gameObject);
+        }
     }
 }
