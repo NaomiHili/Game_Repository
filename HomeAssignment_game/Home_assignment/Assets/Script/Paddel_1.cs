@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Paddel_1 : MonoBehaviour {
-    float x = 0f;
+    float y = 0f;
     // Use this for initialization
     void Start () {
 		
@@ -13,11 +13,13 @@ public class Paddel_1 : MonoBehaviour {
 	void Update () {
 
    
-        if (Input.GetKey(KeyCode.RightArrow))
-        { x += .2f; }
-        if (Input.GetKey(KeyCode.LeftArrow))
-        { x -= .2f; }
+        if (Input.GetKey(KeyCode.UpArrow))
+        { y += .2f; }
+        if (Input.GetKey(KeyCode.DownArrow))
+        { y -= .2f; }
 
-        this.transform.position = new Vector3(x, transform.position.y, transform.position.z);
+        this.transform.position = new Vector3(transform.position.x,y, transform.position.z);
+
+       
     }
 }
