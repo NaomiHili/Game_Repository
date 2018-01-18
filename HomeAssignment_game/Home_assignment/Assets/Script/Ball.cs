@@ -32,7 +32,7 @@ public class Ball : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Return) && !gameStarted)
         {
             gameStarted = true;                              // (x velue, y value)
-            this.GetComponent<Rigidbody2D>().velocity = new Vector2(2f, 10f);
+            this.GetComponent<Rigidbody2D>().velocity = new Vector2(3f, 10f);
         }
     }
 }

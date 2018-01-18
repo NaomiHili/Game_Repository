@@ -1,15 +1,16 @@
-﻿<Properties StartupConfiguration="{513CCDA6-E4B2-C2E8-B343-D830627182BD}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/paddle_2.cs">
+﻿<Properties StartupConfiguration="{513CCDA6-E4B2-C2E8-B343-D830627182BD}|" StartupItem="Home_assignment.csproj">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\Ball.cs">
     <Files>
-      <File FileName="Assets/Script/Paddel_1.cs" Line="1" Column="1" />
-      <File FileName="Assets/Script/paddle_2.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\Paddel_1.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\paddle_2.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\Ball.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Home__assignment PreferredExecutionTarget="Unity.Editor" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Home__assignment PreferredExecutionTarget="Unity.Editor" />
 </Properties>

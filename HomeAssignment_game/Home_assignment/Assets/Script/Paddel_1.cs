@@ -12,14 +12,18 @@ public class Paddel_1 : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-   
+        // so the paddle moved vuia arrow keys
         if (Input.GetKey(KeyCode.UpArrow))
         { y += .2f; }
         if (Input.GetKey(KeyCode.DownArrow))
         { y -= .2f; }
 
+        //given class 
         this.transform.position = new Vector3(transform.position.x,y, transform.position.z);
 
+        //ajusting the paddles tpo stay in border
+        y = Mathf.Clamp(gameObject.transform.position, -3.35f, 3.35f);
        
+         
     }
 }
